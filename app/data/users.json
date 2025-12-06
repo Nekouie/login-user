@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "username": "hussein_dev",
+    "email": "hussein@example.com",
+    "password": "pass1234"
+  },
+  {
+    "id": 2,
+    "username": "sara_user",
+    "email": "sara@example.com",
+    "password": "saraPass"
+  },
+  {
+    "id": 3,
+    "username": "mohammad88",
+    "email": "mohammad@example.com",
+    "password": "mmd8855"
+  },
+  {
+    "id": 4,
+    "username": "nima_python",
+    "email": "nima@example.com",
+    "password": "nimaPW"
+  },
+  {
+    "id": 5,
+    "username": "admin_test",
+    "email": "admin@example.com",
+    "password": "admin123"
+  }
+]
