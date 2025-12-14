@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import {TextField, ThemeProvider} from "@mui/material";
-import {theme} from "@/app/(theme)/theme";
+import {theme} from "../(theme)/theme";
 
 const Register = () => {
 

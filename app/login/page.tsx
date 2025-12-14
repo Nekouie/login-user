@@ -1,22 +1,25 @@
 "use client"
+
+
 import Link from "next/link";
 import {TextField, ThemeProvider} from "@mui/material";
-import {theme} from "@/app/(theme)/theme";
+import {theme} from "../(theme)/theme";
 import users from "../data/users.json"
 import {useState} from "react";
 import {toast, ToastContainer} from "react-toastify";
 import {useRouter} from "next/navigation";
 
+
 const Page = () => {
 
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [error, setError] = useState(false);
+    const [email, setEmail] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
+    const [error, setError] = useState<boolean>(false);
     const router = useRouter();
 
     const handleSubmit = () => {
         if (email.trim() !== "") {
-            const currentUser = users.find(user => user.email === email)
+            const currentUser = users.find((user) => user.email === email)
             if (currentUser) {
                 if (password === currentUser.password) {
                     toast.success('Welcome back!', {
